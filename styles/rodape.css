@@ -1,0 +1,60 @@
+hr {
+    margin: 0;
+}
+
+.rodape2 {
+    background-image: url("../img/fundo3.gif");
+    background-size: cover; /* Faz o GIF cobrir toda a tela */
+    background-position: center; /* Centraliza o GIF */
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 1em;
+    font-family: var(--font-secundaria);
+}
+.lista-rodape {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .rodape2 {
+        display: flex;
+        justify-content: space-around;
+    }
+    .lista-rodape-item {
+        padding: 5%;
+        display: flex;
+        align-items: center;
+    }
+    .lista-rodape {
+        display: block;
+    }
+    .lista-rodape-link {
+        text-decoration: none;
+        color: var(--preto);
+        margin-left: 3;
+        padding: 0.5em;
+    }
+    .lista-rodape-titulo {
+        font-size: 24px;
+        color: var(--cinza);
+    }
+    .rodape-titulo2 {
+        font-size: 60px;
+        background: linear-gradient(to right, rgb(167, 66, 250), #9c00e4, #4300df, #ffae00, #ffae00, #ffae00);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 500;
+    }
+
+}
+
+@media screen and (min-width: 1728px) {
+    .lista-rodape {
+        border-left: 1px solid var(--cinza);
+        padding-left:  1em;
+    }
+    .rodape2 { 
+        padding: 3em 0;
+    }
+}
+    

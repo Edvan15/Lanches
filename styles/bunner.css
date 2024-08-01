@@ -1,0 +1,75 @@
+.bunner {
+    background-image: url("../img/fundo12.jpg");
+    background-size: cover; /* Faz o GIF cobrir toda a tela */
+    background-position: center; /* Centraliza o GIF */
+    
+    color: var(--azul-sub);
+    text-align: center;
+    padding: 2.5em 2em;
+    font-weight: 700;
+}
+
+.bunner-titulo {
+    background-image: url("../img/fundo2.gif");
+    background-size: cover; /* Faz o GIF cobrir toda a tela */
+    background-position: center; /* Centraliza o GIF */
+    background-repeat: no-repeat;
+    text-align: center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+    font-weight: 700;
+    
+}
+
+
+
+.bunner-pesquisa {
+    background-color: transparent;
+    border: 1px solid var(--azul-sub);
+    color: var(--azul-sub);
+    border-radius: 34px;
+    padding: 1em;
+    width: 100%;
+    font-weight: 700;
+}
+
+.bunner-pesquisa::placeholder {
+    font-family: var(--font-principal);
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    color: var(--azul-sube);
+    background-image: url("../img/fundo11.jpg");
+    background-position: 1em;
+    
+    
+}
+
+@media screen and (min-width: 1024px) {
+    .bunner-titulo {
+        font-size: 36px;
+    }
+    .bunner-pesquisa {
+        width: 50%;
+    }
+    .bunner-pesquisa::placeholder {
+        background-position: 7em;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .bunner-pesquisa {
+        width: 35%;
+    }
+    .bunner-pesquisa::placeholder {
+        background-position: 12em;
+    }
+    .bunner {
+        padding: 5em 0;
+    }
+    .bunner-titulo {
+        font-size: 100px;
+        font-weight: 700;
+    }
+}
